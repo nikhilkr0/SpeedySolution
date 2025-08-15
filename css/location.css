@@ -1,0 +1,56 @@
+.inputContainer{
+    width: 60vw;
+    margin: auto;
+}
+.userIPInput{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: salmon;
+    margin: 0px 0px 10px 4px;
+}
+input{
+    font-size: 1.7rem;
+    padding: 5px 0px 5px 10px;
+    border-radius: 12px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+button{
+    padding: 10px;
+    border-radius: 11px;
+    font-size: 1.5rem;
+    background: #2193b0;
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: #ffffff;
+    font-weight: 700;
+    box-shadow: 0px 0px 5px black;
+    margin-bottom: 20px;
+}
+.outputContainer{
+    margin: auto;
+    width: 540px;
+    background-color: salmon;
+    color: #ffff;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.userIPAddress{
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+.userIPInfoList{
+    line-height: 31px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 14px 0px 10px 44px;
+}
