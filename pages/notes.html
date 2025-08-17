@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Note</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/pages_nav.css">
+    <link rel="stylesheet" href="../css/weather.css">
+    <link rel="stylesheet" href="../css/notes.css">
+</head>
+<body>
+    <nav>
+        <div class="webTitle">
+            <p class="webTitleName">Speedy Solution</p>
+            <a href="../index.html">Home</a>
+        </div>
+    </nav>
+    <article>
+        <div class="servicePageDetails">
+            <p class="servicesPageName">ADD Your Note !!!</p>
+            <p class="servicePageDesc">A fast and reliable way to jot down your notes online. Capture your thoughts instantly and keep them safe, secure,
+                 and easy to access whenever you need.</p>
+        </div>
+        <div class="servicesPageImg">
+            <img src="../img/Research paper-pana.svg" alt="">
+        </div>
+    </article>
+     <section>
+        <p class="takingInfoPara">Quickly add your notes online anytime, anywhere. Keep your thoughts safe, organized,
+             and always accessible in one place. Stay productive by capturing ideas the moment they come to you.</p>
+        <div class="inputContainer">
+            <div class="userNotesInput">
+                <label for="">Title: </label>
+                <input type="text" placeholder="Name" id="userNotesTitle">
+                <label for="">Notes: </label>
+                <textarea id="userNotesDesc"></textarea>  
+            </div>
+            <button id="setNotes">ADD NOTE</button>
+            <button id="getNotes">SEE NOTE</button>
+        </div>
+        <div id="targetOutputContainer"></div>
+        <script src="../js/notes.js"></script>
+    </section>
+</body>
+</html>

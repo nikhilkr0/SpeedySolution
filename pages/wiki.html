@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/pages_nav.css">
+    <link rel="stylesheet" href="../css/weather.css">
+    <link rel="stylesheet" href="../css/search.css">
+</head>
+<body>
+    <nav>
+        <div class="webTitle">
+            <p class="webTitleName">Speedy Solution</p>
+            <a href="../index.html">Home</a>
+        </div>
+    </nav>
+    <article>
+        <div class="servicePageDetails">
+            <p class="servicesPageName">GET Wikipedia Info</p>
+            <p class="servicePageDesc">Discover knowledge from Wikipedia in a simplified way. Search topics,
+                 read concise summaries, and stay informed with trusted information at your fingertips.</p>
+        </div>
+        <div class="servicesPageImg">
+            <img src="../img/Search-amico.svg" alt="">
+        </div>
+    </article>
+    <section>
+        <p class="takingInfoPara">Discover information instantly! Simply type any topic into the search box and get a concise, reliable summary powered by Wikipedia,
+             delivering fast, accurate, and easy-to-understand knowledge at your fingertips.</p>
+        <div class="inputContainer">
+            <div class="userTitleInput">
+                <label for="">Enter: </label>
+                <input type="text" placeholder="Name" id="userSearchTitle">
+            </div>
+            <button id="getUserTitle">GET</button>
+        </div>
+        <div id="targetOutputContainer"></div>
+        <script src="../js/search.js"></script>
+    </section>
+</body>
+</html>

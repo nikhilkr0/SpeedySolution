@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+html{
+    font-size: 10px;
+}
+nav{
+    background-color: rgba(0, 0, 0,0.5); /* black with 50% opacity */
+    padding: 1.5rem;
+    width: 100vw;
+    /* position: fixed; */
+    backdrop-filter: blur(8px);
+}
+.webTitle{
+    display: flex;
+    align-items: center;
+}
+.webTitle a{
+    font-size: 2.3rem;
+    color: #ffffff;
+    margin-left: 20px;
+}
+.webTitleName{
+    position: relative;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 600;
+    color: #ffffff;
+    border-right: 2px solid;
+    padding-right: 7px;
+}
+article{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.servicePageDetails{
+    margin-left: 30px;
+}
+.servicesPageName{
+    font-size: 4rem;
+    margin-top: 70px;
+}
+.servicePageDesc{
+    width: 80%;
+    font-size: 2rem;
+    margin-top: 15px;
+    line-height: 43px;
+    font-style: italic;
+}
+.servicesPageImg{
+    text-align: center;
+    margin-right: 40px;
+}
+.servicesPageImg img{
+    width: 38rem;
+}
+.errorContainer{
+   text-align: center;
+   margin: 30px 0px 30px 0px;
+}
+.errorImg img{
+    width: 27rem;
+}
+.errorMessage{
+    font-size: 2rem;
+    color: salmon;
+    font-weight: 700;
+}
+.takingInfoPara{
+    font-size: 1.8rem;
+    line-height: 30px;
+    color: salmon;
+    font-weight: 600;
+    margin: 20px 30px 0px 30px;
+    text-align: center;
+}
+.animationContainer{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+video{
+    width: 35rem;
+}
+.animationPara{
+    font-size: 2rem;
+    font-weight: 500;
+    color: crimson;
+
+}
+@media screen and (max-width:928px){
+    article{
+        flex-direction: column-reverse;
+    }
+    .servicePageDesc{
+        width: 100%;
+        padding: 0px 30px 0px 30px;
+        line-height: 33px;
+    }
+    .servicePageDetails{
+        margin-left: 0px;
+    }
+    .servicesPageName{
+        text-align: center;
+    }
+    .servicesPageImg img{
+    width: 30rem;
+    }
+    .takingInfoPara{
+        text-align: left;
+    }
+}
+@media screen and (max-width:424px){
+    html{
+        font-size: 8px;
+    }
+    .servicesPageName{
+        margin-top: 28px;
+    }
+    .servicePageDesc{
+        line-height: 22px
+    }
+    .takingInfoPara{
+        line-height: 22px;
+    }
+}

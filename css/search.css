@@ -1,0 +1,74 @@
+.inputContainer{
+    width: 60vw;
+    margin: auto;
+}
+.userTitleInput{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: salmon;
+    margin: 0px 0px 10px 4px;
+}
+input{
+    font-size: 1.7rem;
+    padding: 5px 0px 5px 10px;
+    border-radius: 12px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+button{
+    padding: 10px;
+    border-radius: 11px;
+    font-size: 1.5rem;
+    background: #2193b0;
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: #ffffff;
+    font-weight: 700;
+    box-shadow: 0px 0px 5px black;
+    margin-bottom: 20px;
+}
+#targetOutputContainer{
+    padding: 20px 0px 20px 93px;
+}
+.viewDetailsPara{
+    font-size: 1.8rem;
+    color: salmon;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.outputCard{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.cardInfo{
+    margin-left: 20px;
+    line-height: 26px;
+}
+.cardImg img{
+    width: 70px;
+}
+.cardTitle{
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-bottom: 1px solid;
+    border-bottom-style: double;
+    cursor: pointer;
+    color: black;
+}
+.cardDesc{
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 600;
+}
+@media screen and (max-width:682px) {
+    #targetOutputContainer{
+        padding-left: 24px;
+    }
+}

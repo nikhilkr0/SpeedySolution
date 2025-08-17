@@ -1,0 +1,156 @@
+.detailsContainer{
+    padding: 25px;
+    width: 85vw;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 37px;
+    box-shadow: 0px 0px 19px 0px black;
+    border-radius: 19px;
+}
+.userInputContainer{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+input{
+    font-size: 1.7rem;
+    padding: 5px 0px 5px 10px;
+    border-radius: 12px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.userButton{
+    text-align: center;
+}
+#detailButton{
+    padding: 10px;
+    border-radius: 11px;
+    font-size: 1.5rem;
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffff;
+    font-weight: 700;
+    box-shadow: 0px 0px 5px black;
+}
+table{
+    width: 78vw;
+    text-align: center;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    margin: auto;
+    font-weight: 500;
+    background-color: cadetblue;
+    color: #ffffff;
+    border-radius: 10px;
+}
+td{
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid;
+}
+.forecastContainer{
+    width: 95vw;
+    margin: auto;
+    margin-top: 20px;
+}
+#forecastDataContainer{
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 180px));
+    row-gap: 15px;
+    column-gap: 15px;
+}
+.forecastCard{
+    text-align: center;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: darkgray;
+    color: #ffffff;
+    box-shadow: 0px 0px 10px black;
+}
+.weatherForecast{
+    font-size: 2rem;
+    color: salmon;
+}
+.forecastImg img{
+    background-color: rgba(17,169,169,0.4);
+    border-radius: 20px;
+}
+.forecastWeatherDetails{
+    line-height: 25px;
+}
+.forecastWeatherDetails li{
+    font-size: 1.5rem;
+    list-style: none;
+}
+.sortByContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#dropdownWeatherOption{
+    width: 150px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 2px;
+}
+/* css for aqi pages */
+.aqiCard{
+    color: #ffffff;
+    background-color: coral;
+    padding: 23px;
+    width: 700px;
+    margin: auto;
+    border-radius: 21px;
+    box-shadow: 0px 0px 13px black;
+    margin-bottom: 50px;
+}
+.aqiPara{
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.aqiInfo{
+    font-size: 1.7rem;
+    line-height: 27px;
+    text-transform: capitalize;
+}
+.aqiComponentPara{
+    color: black;
+    margin: 10px 0px 10px 0px;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+#aqiComponentList{    
+    margin-left: 60px;
+}
+@media screen and (max-width:820px) {
+    .aqiCard{
+        width: 80vw;
+    }
+}
+@media screen and (max-width:461px) {
+    .weatherForecast{
+        font-size: 1.6rem;
+    }
+    label{
+        font-size: 1.5rem;
+        font-weight: 500;
+
+    }
+    #dropdownWeatherOption {
+        width: 110px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-right: 6px;
+    }
+}

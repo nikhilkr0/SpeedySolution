@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rating</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+    <link rel="stylesheet" href="../css/pages_nav.css">
+    <link rel="stylesheet" href="../css/weather.css">
+    <link rel="stylesheet" href="../css/movie.css">
+</head>
+<body>
+    <nav>
+        <div class="webTitle">
+            <p class="webTitleName">Speedy Solution</p>
+            <a href="../index.html">Home</a>
+        </div>
+    </nav>
+    <article>
+        <div class="servicePageDetails">
+            <p class="servicesPageName">GET Movie Details</p>
+        <p class="servicePageDesc">Find everything you need to know about your favorite movies and shows. Browse cast details, reviews, trailers, and storyline updates with ease.</p>
+        </div>
+        <div class="servicesPageImg">
+            <img src="../img/Recording a movie-amico.svg" alt="">
+        </div>
+    </article>
+    <section>
+        <p class="takingInfoPara">Type a movie, show, or series name and get a complete, easy-to-read profile:
+             plot summary, main cast, runtime, genres, ratings, trailers, streaming availability, and
+              similar recommendations. Fast, spoiler toggle, and built for binge-planning</p>
+        <div class="inputContainer">
+            <div class="userMovieInput">
+                <label for="">Enter: </label>
+                <input type="text" placeholder="Name" id="userMovieName">
+            </div>
+            <button id="getUserMovie">GET</button>
+        </div>
+        <div id="targetOutputContainer" class=""></div>
+    </section>
+    <script src="../js/movie.js"></script>
+</body>
+</html>
