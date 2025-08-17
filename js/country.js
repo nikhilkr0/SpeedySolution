@@ -2,6 +2,14 @@ const button = document.getElementById("getUserCountry");
 const outputCountry = document.getElementById("targetOutputContainer");
 
 const onClickButton = async () => {
+    outputCountry.innerHTML=`
+        <div class="animationContainer">
+            <video autoplay loop muted playsinline>
+                <source src="../img/Business Analysis.mp4" type="video/mp4">
+            </video>
+            <p class="animationPara">Fetching Details .....</p>
+        </div>
+    `
     const userCountry = document.getElementById("userCountryName").value;
     const outputContainerFragment = document.createDocumentFragment();
     const response = await fetch(`https://restcountries.com/v3.1/name/${userCountry}`);
@@ -26,16 +34,6 @@ const onClickButton = async () => {
     for (let cardTitleButton of cardTitleButtonList) {
         cardTitleButton.addEventListener("click", cardTitleClick)
     }
-    outputCountry.innerHTML = `
-            <div class="errorContainer">
-            <div class="errorImg">
-                <img src="../img/404 error with a landscape-pana.svg">
-            </div>
-            <div class="errorMessageContainer">
-                <p class="errorMessage">Request Not Found</p>
-            </div>
-        </div>
-        `
 }
 const cardTitleClick = async (event) => {
     const cardTitleName = event.target.textContent;
